@@ -1,0 +1,43 @@
+{
+  "extends": "fastify-tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "moduleResolution": "Bundler",
+    "module": "ES2022",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@helper": ["src/helper/index.ts"],
+      "@validator": ["src/validator/index.ts"],
+      "@types": ["src/types.ts"]
+    },
+    // "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    // "types": [
+    //   "./src/app.d.ts"
+    // ]
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "resolveJsonModule": true
+    }
+  },
+  // "ts-node": {
+  //   "esm": true,
+  //   "experimentalSpecifierResolution": "node",
+  //   "compilerOptions": {
+  //     "paths": {
+  //       "@/*": ["src/*"],
+  //       "@helper": ["src/helper/index.ts"],
+  //     }
+  //   }
+  // },
+  "include": ["src/**/*.ts"]
+}
