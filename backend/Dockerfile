@@ -42,9 +42,9 @@ ENV NODE_ENV=production
 RUN addgroup -g 1001 -S appgroup
 RUN adduser -S appuser -u 1001
 
-COPY --from=builder --chown=appuser:appgroup /app/node_modules ./node_modules
-COPY --from=builder --chown=appuser:appgroup /app/package.json ./package.json
-COPY --from=builder --chown=appuser:appgroup /app/dist ./dist
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/dist ./dist
 
 USER appuser
 

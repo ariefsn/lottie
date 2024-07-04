@@ -23,6 +23,7 @@ export default function RootLayout({
     <StoreProvider>
       <html lang="en">
         <head>
+          <meta name="theme-color" content="#04dcb1" />
           <ColorSchemeScript />
         </head>
         <body className={monserrat.className}>
