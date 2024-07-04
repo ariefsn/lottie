@@ -11,6 +11,7 @@ const monserrat = Montserrat({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: `${process.env.NEXT_PUBLIC_APP_NAME}`,
   description: 'Lottie App!',
+  manifest: '/manifest.json'
 };
 
 export default function RootLayout({

@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-import withPwa from 'next-pwa'
-
 const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
+import withPWA from 'next-pwa'
 
 const nextConfig = {
   reactStrictMode: false,
@@ -17,6 +17,7 @@ const nextConfig = {
   }
 };
 
-export default withPwa({
-  dest: 'public'
+export default withPWA({
+  dest: 'public',
+  disable: process.env.NODE_ENV === 'development',
 })(nextConfig);

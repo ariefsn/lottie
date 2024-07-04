@@ -1,27 +1,25 @@
 {
-  "name": "Lottie App",
-  "short_name": "Lottie",
+  "theme_color": "#04dcb1",
+  "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/icons/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icons/android-chrome-384x384.png",
-      "sizes": "384x384",
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/icons/icon512_maskable.png",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512x512.png",
-      "sizes": "512x512",
+      "purpose": "any",
+      "sizes": "/icons/512x512",
+      "src": "icon512_rounded.png",
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
-  "start_url": "/",
+  "orientation": "portrait",
   "display": "standalone",
-  "orientation": "portrait"
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "Lottie",
+  "short_name": "Lottie",
+  "start_url": "https://lottie.ariefsn.dev"
 }
