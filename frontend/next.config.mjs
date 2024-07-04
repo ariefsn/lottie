@@ -2,7 +2,7 @@
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
-import withPWA from 'next-pwa'
+import withPWA from '@ducanh2912/next-pwa'
 
 const nextConfig = {
   reactStrictMode: false,
